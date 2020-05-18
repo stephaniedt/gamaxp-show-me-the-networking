@@ -19,7 +19,7 @@ function countdown(){
     var minutes =  Math.floor((remTime % h) / m);
     var seconds =  Math.floor((remTime % m) / s);
 
-    document.getElementById("divCd").textContent = (+hours+ ":" +minutes + ":" +seconds);
+    document.getElementById("divCd").textContent = (`${days}:${hours}:${minutes}:${seconds}`);
 
     
 
