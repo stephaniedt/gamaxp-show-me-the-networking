@@ -21,10 +21,12 @@ function countdown(){
 
     //console.log("days: "+days ,"hours: "+hours, "minutes: "+minutes, "seconds: "+seconds);
 
-    document.getElementById("days").textContent = 'days' + days;
-    document.getElementById("hours").innerText = 'hours' + hours;
-    document.getElementById("minutes").innerText = 'minutes' + minutes;
-    document.getElementById("seconds").innerText = 'seconds' + seconds;
+    document.getElementById("divCd").textContent = (+hours+ ":" +minutes + ":" +seconds);
+
+    //document.getElementById("days").textContent = 'days' + days;
+    //document.getElementById("hours").innerText = 'hours' + hours;
+    //document.getElementById("minutes").innerText = 'minutes' + minutes;
+    //document.getElementById("seconds").innerText = 'seconds' + seconds;
 
     
 }
