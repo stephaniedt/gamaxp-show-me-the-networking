@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -10,49 +14,43 @@
         <img class="logo" src="img/Reboot.png" alt="logo">
     </header>
 
-    <section class="container">
-        <div class="colOne">
-            <div>
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Quisque dictum tincidunt porttitor. Mauris maximus libero felis, 
-                    sed egestas libero suscipit ut. Donec vitae turpis consectetur, 
-                    ultricies lacus condimentum, suscipit tortor. Aenean luctus libero a 
-                    feugiat fringilla. Maecenas varius vehicula tristique. Aliquam a augue 
-                    fringilla, interdum tortor at, congue nibh. Cras egestas lorem quam. Cras 
-                    placerat vestibulum molestie.</p>
+    <section class="container-fluid">
+        <div class="colwrap d-flex">
+            <div class=" colOne">
+                <div>
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Quisque dictum tincidunt porttitor. Mauris maximus libero felis, 
+                        sed egestas libero suscipit ut. Donec vitae turpis consectetur, 
+                        ultricies lacus condimentum, suscipit tortor. Aenean luctus libero a 
+                        feugiat fringilla. Maecenas varius vehicula tristique. Aliquam a augue 
+                        fringilla, interdum tortor at, congue nibh. Cras egestas lorem quam. Cras 
+                        placerat vestibulum molestie.</p>
+                </div>
+                <div id="divCountdown">
+                    <h2>A LIVE COMEÇA EM:</h2>
+                    <div id="divCd"></div>
+                </div>
+    
             </div>
-            <div id="divCountdown">
-                <h2>A LIVE COMEÇA EM:</h2>
-                <div id="divCd"></div>
-                <ul>  
-                    <li id="days"></li>
-                    <li id="hours"></li>
-                    <li id="minutes"></li>
-                    <li id="seconds"></li>
-                </ul>
+    
+    
+    
+            <div  class="colTwo">
+               <h2>Lorem ipsum dolor sit</h2> 
+               <p>Duis fermentum orci quam, id commodo justo fringilla ac.</p>
+            
+                <form class="d-flex justify-content-center"> 
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Nickname"  name="nickname" required>
+                        <input class="form-control"type="email" placeholder="Email" name="email" required>
+                        <button class="btn" title="Enviar link" type="submit" >ENVIAR LINK</button>
+                    </div>
+                </form>
             </div>
-
-        </div>
-
-
-
-        <div  class="colTwo">
-           <h2>Lorem ipsum dolor sit</h2> 
-           <p>Duis fermentum orci quam, id commodo justo fringilla ac.</p>
-        
-            <form>
-                <input type="text" placeholder="Nickname"  name="nickname" required>
-                <input type="email" placeholder="Email" name="email" required>
-                <button title="Enviar link" type="submit" >ENVIAR LINK</button>
-            </form>
         </div>
 
     </section>
 
-
-
-    
-   
 
     <script src='./js/countDown.js'> </script>
 </body>
