@@ -59,10 +59,6 @@ body{
     line-height: 29px;
 }
 
-.container ul {
-    list-style: none!important;
-}
-
 #divCountdown {
     width: 100%; 
     background: #7800B0;

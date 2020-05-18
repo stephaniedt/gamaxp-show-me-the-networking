@@ -26,3 +26,8 @@ function countdown(){
     
 }
 timer = setInterval(countdown, 1000);
+
+
+// document.onmouseout = () => {
+//     alert('Obrigada por nos visitar!')
+// };
