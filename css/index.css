@@ -34,6 +34,7 @@ body{
 
 .colwrap {
     padding: 177px 0;
+    justify-content: space-between;
 }
 
 
@@ -42,7 +43,7 @@ body{
 
 
 .colOne {
-    margin-right: 183px;
+   width: 55%;
 }
 .colOne h1 {
     font-style: normal;
@@ -84,7 +85,7 @@ body{
 
 /*column 2*/
 .colTwo {
-    width: 40%;
+    width: 30%;
     background: #D2D2D2;
     color: #000000;
     padding-top: 58px;
@@ -133,9 +134,11 @@ form {
 
 
 
-@media (min-width: 992px) and (max-width: 1159px) {
+@media (min-width: 992px)  {
 
-
+form {
+    width: 100%;
+}
 
 }
 
