@@ -19,7 +19,7 @@ function countdown(){
     var minutes =  Math.floor((remTime % h) / m);
     var seconds =  Math.floor((remTime % m) / s);
 
-    document.getElementById("divCd").textContent = (days+":"+hours+ ":" +minutes + ":" +seconds);
+    document.getElementById("divCd").innerHTML = (days+":"+hours+ ":" +minutes + ":" +seconds);
 
     
 
@@ -28,6 +28,6 @@ function countdown(){
 timer = setInterval(countdown, 1000);
 
 
-// document.onmouseout = () => {
-//     alert('Obrigada por nos visitar!')
-// };
+document.onmouseout = () => {
+    alert('Obrigada por nos visitar!')
+};
