@@ -216,4 +216,15 @@ form {
         font-size: 25px;
         width: 100%;
      }
+     .container-fluid {
+        padding: 0 15px;
+    }
+    .colTwo p, .colTwo h2 {
+        width: auto;
+        padding-left: 0;
+    }
+    .form-control {
+        margin-bottom: 20px;
+        width: 100%;
+    }
  }
