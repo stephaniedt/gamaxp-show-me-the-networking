@@ -1,5 +1,5 @@
 
-var eventDate = new Date('2020,5,20, 12:00:00  ');
+var eventDate = new Date('May 20, 2020 12:00:00');
 var s = 1000;
 var m = s * 60;
 var h = m * 60;
@@ -19,10 +19,19 @@ function countdown(){
     var minutes =  Math.floor((remTime % h) / m);
     var seconds =  Math.floor((remTime % m) / s);
 
-    document.getElementById("divCd").textContent = (days+":"+hours+ ":" +minutes + ":" +seconds);
+    document.getElementById("divCd").innerHTML = (days+":"+hours+ ":" +minutes + ":" +seconds);
 
     
 
     
 }
 timer = setInterval(countdown, 1000);
+
+
+popUp();
+
+function popUp() {
+    document.onmouseleave = () => {
+        // alert('Obrigada por nos visitar!');
+    };
+}
