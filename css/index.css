@@ -146,9 +146,6 @@ form {
 
  @media (max-width: 991px) {
 
-    body {
-    background: black;
-    }
 
     .text {
        padding-left: 30px;
