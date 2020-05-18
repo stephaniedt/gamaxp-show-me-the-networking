@@ -1,0 +1,52 @@
+html, body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    color: #ffffff;
+}
+
+#logo{
+    background-color: #000000;
+    padding: 10px 0 10px 58px;
+}
+ /*cointainer */
+.container{
+    display: flex;
+    padding: 177px 88px 177px 58px;
+}
+
+/*column 1*/
+
+
+.colOne {
+    width: 60%;
+}
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+
+/*column 2*/
+.colTwo {
+    width: 40%;
+    background: #D2D2D2;
+    color: #000000;
+}
+
+
+@media all and (max-width: 900px) { 
+    
+    .container{
+        flex-direction: column;
+    }
+    
+ }
