@@ -31,7 +31,7 @@ timer = setInterval(countdown, 1000);
 popUp();
 
 function popUp() {
-    document.onmouseout = () => {
+    document.onmouseleave = () => {
         // alert('Obrigada por nos visitar!');
     };
 }
