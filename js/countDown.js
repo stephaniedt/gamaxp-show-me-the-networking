@@ -32,6 +32,6 @@ popUp();
 
 function popUp() {
     document.onmouseleave = () => {
-        // alert('Obrigada por nos visitar!');
+        
     };
 }

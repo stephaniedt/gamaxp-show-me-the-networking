@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Agencia Reboot"></meta>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '293684788303898');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=293684788303898&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+    <title>Agencia Reboot</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -41,10 +60,12 @@
                     <p>Duis fermentum orci quam, id commodo justo fringilla ac.</p>
                 </div>
             
-                <form class="d-flex justify-content-center"> 
+                <form class="d-flex justify-content-center" action="https://agenciareboot.api-us1.com" method="POST"> 
                     <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Nickname"  name="nickname" required>
-                        <input class="form-control"type="email" placeholder="Email" name="email" required>
+                        <label for="nickname">Nickname</label>
+                        <input class="form-control" id="nickname" type="text" placeholder="Nickname"  name="nickname" required>
+                        <label for="email">E-mail</label>
+                        <input class="form-control"type="email" id="name" placeholder="Email" name="email" required>
                         <button class="btn" title="Enviar link" type="submit" >ENVIAR LINK</button>
                     </div>
                 </form>
