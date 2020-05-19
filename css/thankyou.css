@@ -65,5 +65,14 @@ img.gifThankyou {
     .container h1 {
         font-size: 50px;
     }
+    
 
+ }
+
+ @media all and (max-width: 500px) { 
+
+    img.gifThankyou {
+        margin-top: 21px;
+        width: 300px;
+    }
  }
