@@ -17,9 +17,7 @@ body{
 
 #logo{
     background-color: #000000;
-    width: 100%;
-    height: 60px;
-   
+    width: 100%;   
 }
 
 .logo {
@@ -43,7 +41,8 @@ body{
 
 
 .colOne {
-   width: 55%;
+   width: 70%;
+   margin-right: 210px;
 }
 .colOne h1 {
     font-style: normal;
@@ -59,12 +58,19 @@ body{
     font-size: 24px;
     line-height: 29px;
 }
-
+.colOne p#pBold {
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
 #divCountdown {
     width: 100%; 
     background: #7800B0;
     margin-top: 70px;
-    padding-bottom: 40px;
+    height: 254px;
+    align-content: center;
+    display: grid;
+
 }
 
 #divCd {
@@ -86,9 +92,7 @@ body{
 /*column 2*/
 .colTwo {
     width: 30%;
-    background: #D2D2D2;
     color: #000000;
-    padding-top: 58px;
 }
 
 .colTwo p, .colTwo h2 {
@@ -107,7 +111,11 @@ body{
 .colTwo h2 {
     font-weight: 800;
 }
-
+.divform {
+    background: #D2D2D2;
+    padding-top: 58px;
+    padding-bottom: 17px;
+}
 
 form {
     padding: 0 auto;
@@ -122,7 +130,7 @@ form {
 }
 
 .form-control {
-    margin-bottom: 30px;
+    
     width: 100%;
 }
 
@@ -135,6 +143,14 @@ form {
     margin: 0 auto;
     text-align: center!important;
     display: block;
+    margin-top: 30px;
+    padding: 11px 0;
+}
+
+img.gifHome {
+    padding-top: 56px;
+    width: 100%;
+    height: 254px;
 }
 
 
@@ -153,11 +169,9 @@ form {
 }
 
 
- @media (max-width: 991px) {
+ @media (max-width: 1326px) {
 
-    body {
-    background: black;
-    }
+    
 
     .text>h2, .text>p{
        padding: 10px 40px;
@@ -189,23 +203,27 @@ form {
     
     }
     .form-group {
-        width: 80%;
+        width: 100%;
     }
     .colOne {
         width: 90%;
         margin: 0 20px;
         margin-bottom: 60px;
     }
+
     .colTwo {
         width: 90%;
         margin: 0 20px;
-        background: #D2D2D2;
-        color: #000000;
-        padding-top: 58px;
+        padding-top: 0;
     }
  }
 
+
+ 
  @media (max-width: 576px) {
+    body {
+        background: black;
+        }
     #logo {
         text-align: center;
     }

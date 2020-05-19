@@ -18,8 +18,6 @@ body{
 #logo{
     background-color: #000000;
     width: 100%;
-    height: 60px;
-   
 }
 
 .logo {
@@ -30,9 +28,12 @@ section.container {
     text-align: center;
     padding: 15% 0 10% 0;
     width: 100%;
-    max-width: 860px;
+    
 }
 
+.divContainer{
+
+}
 .container p {
     padding-top: 6%;
     font-style: normal;
@@ -49,6 +50,9 @@ section.container {
     line-height: 78px;
 }
 
+img.gifThankyou {
+    margin-top: 79px;
+}
 @media all and (max-width: 1055px) { 
     
     section.container {
@@ -59,7 +63,7 @@ section.container {
         font-size: 30px;
     }
     .container h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
  }
