@@ -31,7 +31,7 @@ body{
 }
 
 .colwrap {
-    padding: 177px 0;
+    padding-top: 177px;
     justify-content: space-between;
 }
 
@@ -63,30 +63,7 @@ body{
     padding-bottom: 10px;
     padding-top: 25px;
 }
-#divCountdown {
-    width: 100%; 
-    background: #7800B0;
-    margin-top: 70px;
-    height: 254px;
-    align-content: center;
-    display: grid;
 
-}
-
-#divCd {
-    text-align: center;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 5rem;
-    padding: 0 30px;
-}
-#divCountdown h2 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 22px;
-}
 
 
 /*column 2*/
@@ -147,12 +124,50 @@ form {
     padding: 11px 0;
 }
 
-img.gifHome {
-    padding-top: 56px;
-    width: 100%;
+
+
+/*section two*/
+
+/*col one */
+.containerTwo .colwrap.d-flex {
+    padding: 0;
+}
+#divCountdown {
+    width: 100%; 
+    background: #7800B0;
     height: 254px;
+    align-content: center;
+    display: grid;
+
+}
+section.container-fluid.containerTwo {
+    padding-top: 56px;
+    padding-bottom: 86px;
 }
 
+#divCd {
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5rem;
+    padding: 0 30px;
+}
+#divCountdown h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 22px;
+}
+
+
+
+/*col two */
+img.gifHome {
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+}
 
 @media (min-width: 992px) {
 
@@ -179,7 +194,7 @@ img.gifHome {
     }
     .colwrap {
         flex-direction: column;
-        padding: 100px 0;
+        padding: 100px 0 50px 0;
     }
 
     #divCountdown h2 {
@@ -216,6 +231,13 @@ img.gifHome {
         margin: 0 20px;
         padding-top: 0;
     }
+
+    /* section two */
+
+    section.container-fluid.containerTwo {
+        padding-top: 0;
+    }
+
  }
 
 
