@@ -134,11 +134,17 @@ form {
 
 
 
-@media (min-width: 992px)  {
+@media (min-width: 992px) {
 
-form {
-    width: 100%;
-}
+    form {
+        width: 100%;
+    }
+    
+    .text>h2, .text>p{
+        padding: 10px 35px;
+        width: 100%;
+     }
+
 
 }
 
@@ -149,8 +155,9 @@ form {
     background: black;
     }
 
-    .text {
-       padding-left: 30px;
+    .text>h2, .text>p{
+       padding: 10px 40px;
+       width: 100%;
     }
     .colwrap {
         flex-direction: column;
@@ -174,7 +181,7 @@ form {
     form {
         
         padding-bottom: 60px;
-        width: 100%;
+        width: 90%;
     
     }
     .form-group {
@@ -226,3 +233,53 @@ form {
         padding: 0;
     }
  }
+
+.popUpBox{
+    background:rgba(0,0,0,.4);
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    color: black;
+    width:100%;
+    z-index:10000;
+}
+.popUpBox .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.popUpBox > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 25px 5%;
+}
+.popupClose {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
