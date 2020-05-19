@@ -169,19 +169,6 @@ img.gifHome {
     height: 100%;
 }
 
-@media (min-width: 992px) {
-
-    form {
-        width: 100%;
-    }
-    
-    .text>h2, .text>p{
-        padding: 10px 35px;
-        width: 100%;
-     }
-
-
-}
 
 
  @media (max-width: 1326px) {
@@ -193,7 +180,7 @@ img.gifHome {
        width: 100%;
     }
     .colwrap {
-        flex-direction: column;
+        flex-direction: row;
         padding: 100px 0 50px 0;
     }
 
@@ -223,7 +210,6 @@ img.gifHome {
     .colOne {
         width: 90%;
         margin: 0 20px;
-        margin-bottom: 60px;
     }
 
     .colTwo {
@@ -240,6 +226,20 @@ img.gifHome {
 
  }
 
+ 
+@media (max-width: 900px) {
+
+    .colwrap {
+        flex-direction: column;
+        padding: 100px 0 50px 0;
+    }
+    .containerTwo .colTwo {
+        padding-top: 40px;
+    }
+
+
+
+}
 
  
  @media (max-width: 576px) {
