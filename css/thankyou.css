@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(../img/backgroundimg2.png) no-repeat center center fixed; 
+    background: url(../img/background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,28 +31,52 @@ section.container {
     
 }
 
-.divContainer{
-
-}
 .container p {
-    padding-top: 6%;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
+    width: 704px;
+    margin: 0 auto;
 }
-
 .container h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
     line-height: 78px;
+    padding: 41px 0;
+
 }
 
-img.gifThankyou {
-    margin-top: 79px;
+.redes {
+    background: #7800B0;
+    width: 358px;
+    margin: 0 auto;
+    margin-top: 26px;
 }
+.redes h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 9px;
+}
+li.socialIcon:first-child {
+    padding-right: 40px;
+}
+.divsocialMedia {
+    display: flex;
+    justify-content: center;
+}
+li.socialIcon {
+    list-style: none;
+}
+.redes ul {
+    flex-direction: row;
+    display: flex;
+}
+
 @media all and (max-width: 1055px) { 
     
     section.container {
@@ -65,8 +89,13 @@ img.gifThankyou {
     .container h1 {
         font-size: 50px;
     }
+    .container p {
+        width: auto;
+    }
+    .redes {
+        width: auto;
+    }
     
-
  }
 
  @media all and (max-width: 500px) { 
@@ -75,4 +104,10 @@ img.gifThankyou {
         margin-top: 21px;
         width: 300px;
     }
+    body {
+
+        background: #000000;
+    }
+
+  
  }

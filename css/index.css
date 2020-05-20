@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(../img/backgroundimg2.png) no-repeat center center fixed; 
+    background: url(../img/background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,9 +72,9 @@ body{
     color: #000000;
 }
 
-.colTwo p, .colTwo h2 {
-    width: 284px;
-    padding-left: 32px;
+.text {
+    width: 100%;
+    padding: 0 35px;
 }
 
 .colTwo p {
@@ -87,6 +87,7 @@ body{
 
 .colTwo h2 {
     font-weight: 800;
+    font-size: 28px;
 }
 .divform {
     background: #D2D2D2;

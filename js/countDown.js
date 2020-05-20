@@ -1,5 +1,5 @@
 
-var eventDate = new Date('May 20, 2020 18:00:00');
+var eventDate = new Date('May 21, 2020 18:00:00');
 var s = 1000;
 var m = s * 60;
 var h = m * 60;
