@@ -12,15 +12,16 @@ $('#logo').mouseleave(function(){
   
   $('#formulario').submit(function (event) {
     
-    var name = $('#nickname').val();
-    var email = $('#email').val();
+    var name = $('#NAME').val();
+    var email = $('#EMAIL').val();
+    var linkedin = $('#LINKEDIN').val();
     
     event.preventDefault();
     
     $.ajax({
       url: 'https://agenciareboot.us18.list-manage.com/subscribe/post',
       method: 'POST',
-      data: { u: '8639194a63a0eeeb95aa17c8f', id: 'b4c1b7f0d5', NICK: name, EMAIL: email },
+      data: { u: '8639194a63a0eeeb95aa17c8f', id: 'b4c1b7f0d5', NAME: name, EMAIL: email, LINKEDIN: linkedin },
       dataType: 'jsonp'
     });
 });
