@@ -74,7 +74,6 @@ body{
 
 .text {
     width: 100%;
-    padding: 0 35px;
 }
 
 .colTwo p {
@@ -92,7 +91,9 @@ body{
 .divform {
     background: #D2D2D2;
     padding-top: 58px;
-    padding-bottom: 17px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 form {
@@ -100,11 +101,13 @@ form {
     width: 404px;
 
 }
+form#formulario {
+    width: 100%;
+}
 
 .form-group {
     margin: 0 auto;
     width: 100%;
-    padding: 0 35px;
 }
 
 .form-control {
@@ -123,6 +126,7 @@ form {
     display: block;
     margin-top: 30px;
     padding: 11px 0;
+    font-size: 23px;
 }
 
 
@@ -176,10 +180,6 @@ img.gifHome {
 
     
 
-    .text>h2, .text>p{
-       padding: 10px 40px;
-       width: 100%;
-    }
     .colwrap {
         flex-direction: row;
         padding: 100px 0 50px 0;
@@ -265,27 +265,36 @@ img.gifHome {
     #divCd {
     font-size: 25px;
     }
-    .text {
-        padding: 0 20px;
-     }
 
-     .colTwo p, .colTwo h2 {
+    .colTwo p, .colTwo h2 {
 
         width: 100%;
         padding: 0;
     }
+    .colTwo {
+        margin: 0 auto;
+    }
     .container-fluid {
         padding: 0 20px;
+    }
+    .divform {
+        background: #D2D2D2;
+        padding-top: 58px;
+        padding-bottom: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     form {
         padding-bottom: 60px;
         width: 100%;
     }
-    .form-group {
-        width: 100%;
-        padding: 0 20px;
-    }
+    
  }
+
+
+
+
+
 
 .popUpBox{
     background:rgba(0,0,0,.4);
