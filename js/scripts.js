@@ -23,13 +23,15 @@ $('#logo').mouseleave(function(){
       method: 'POST',
       data: { u: '8639194a63a0eeeb95aa17c8f', id: 'b4c1b7f0d5', NAME: name, EMAIL: email, LINKEDIN: linkedin },
       dataType: 'jsonp',
-      success: function(response){
-        console.log(response.success)
-    }
+      function (response) {
+        console.log(response);
+        
+      }
     });
 });
 
-    $('#formulario').submit(function (response) {
-      console.log(response.success);
+    $('#formulario').submit( function() {
+      alert("Dados enviados!")
       window.location.href = "https://www.agenciareboot.com/thankyou.html";
+      
     });
