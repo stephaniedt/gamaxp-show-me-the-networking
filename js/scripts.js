@@ -12,9 +12,9 @@ $('#logo').mouseleave(function(){
   
   $('#formulario').submit(function (event) {
     
-    var name = $('#NAME').val();
-    var email = $('#EMAIL').val();
-    var linkedin = $('#LINKEDIN').val();
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var linkedin = $('#linkedin').val();
     
     event.preventDefault();
     
@@ -27,5 +27,5 @@ $('#logo').mouseleave(function(){
 });
 
 $('#formulario').submit(function () {
-  window.location = "https://www.agenciareboot.com/thankyou.html";
+  window.location.href = "https://www.agenciareboot.com/thankyou.html";
 });
