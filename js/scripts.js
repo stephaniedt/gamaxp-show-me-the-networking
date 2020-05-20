@@ -29,7 +29,7 @@ $('#logo').mouseleave(function(){
     });
 });
 
-    $('#formulario').submit(function (event) {
-      console.log('Enviado');
+    $('#formulario').submit(function (response) {
+      console.log(response.success);
       window.location.href = "https://www.agenciareboot.com/thankyou.html";
     });
