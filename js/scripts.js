@@ -22,10 +22,14 @@ $('#logo').mouseleave(function(){
       url: 'https://agenciareboot.us18.list-manage.com/subscribe/post',
       method: 'POST',
       data: { u: '8639194a63a0eeeb95aa17c8f', id: 'b4c1b7f0d5', NAME: name, EMAIL: email, LINKEDIN: linkedin },
-      dataType: 'jsonp'
+      dataType: 'jsonp',
+      success: function(response){
+        console.log(response.success)
+    }
     });
 });
 
-$('#formulario').submit(function () {
-  window.location.href = "https://www.agenciareboot.com/thankyou.html";
-});
+    $('#formulario').submit(function (event) {
+      console.log('Enviado');
+      window.location.href = "https://www.agenciareboot.com/thankyou.html";
+    });
