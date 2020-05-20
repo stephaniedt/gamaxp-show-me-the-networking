@@ -26,5 +26,5 @@ $('#logo').mouseleave(function(){
 });
 
 $('#formulario').submit(function () {
-  window.location = "https://www.agenciareboot.com.br/thankyou.html";
+  window.location = "https://www.agenciareboot.com/thankyou.html";
 });
