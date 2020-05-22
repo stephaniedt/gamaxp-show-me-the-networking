@@ -19,15 +19,19 @@ function countdown(){
     var minutes =  Math.floor((remTime % h) / m);
     var seconds =  Math.floor((remTime % m) / s);
 
-    document.getElementById("divCd").innerHTML = (('0' +days).slice(-2)+":"+('0' +hours).slice(-2)+ ":" +('0' +minutes).slice(-2) + ":" +('0' +seconds).slice(-2));
-
     if(currentTime > eventDate) {
 
     document.getElementById("divCountdown").innerHTML =  `
     <h2>ASSISTA AGORA:</h2>
     <span class="text-center"><a href="https://www.youtube.com/watch?v=tUrMomLWmA0">[LIVE] Carreiras Digitais</a></span>
     `
+    } else {
+
+        document.getElementById("divCd").innerHTML = (('0' +days).slice(-2)+":"+('0' +hours).slice(-2)+ ":" +('0' +minutes).slice(-2) + ":" +('0' +seconds).slice(-2));
+        
     }
+
+    
 }
 timer = setInterval(countdown, 1000);
 
